@@ -1,0 +1,2175 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Grid Mencari K &#8212; Heart Disease</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UTS_PSD';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Tujuan" href="Heart_Disease.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Heart Disease - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Heart Disease - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Selamat Datang
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Heart_Disease.html">Tujuan</a></li>
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Grid Mencari K</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/teguhbudiprasetya/PSD" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/teguhbudiprasetya/PSD/issues/new?title=Issue%20on%20page%20%2FUTS_PSD.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/UTS_PSD.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Grid Mencari K</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Grid Mencari K</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z-Score</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minmax">MinMax</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Z-Score</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">MinMax</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">librosa</span>
+<span class="kn">import</span> <span class="nn">librosa.display</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">scipy</span>
+<span class="kn">import</span> <span class="nn">zipfile</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>kaggle
+<span class="o">!</span><span class="w"> </span>mkdir<span class="w"> </span>~/.kaggle
+<span class="o">!</span><span class="w"> </span>cp<span class="w"> </span>kaggle.json<span class="w"> </span>~/.kaggle/
+<span class="o">!</span><span class="w"> </span>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>~/.kaggle/kaggle.json
+<span class="o">!</span>kaggle<span class="w"> </span>datasets<span class="w"> </span>download<span class="w"> </span>-d<span class="w"> </span>ejlok1/toronto-emotional-speech-set-tess
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: kaggle in /usr/local/lib/python3.10/dist-packages (1.5.16)
+Requirement already satisfied: six&gt;=1.10 in /usr/local/lib/python3.10/dist-packages (from kaggle) (1.16.0)
+Requirement already satisfied: certifi in /usr/local/lib/python3.10/dist-packages (from kaggle) (2023.11.17)
+Requirement already satisfied: python-dateutil in /usr/local/lib/python3.10/dist-packages (from kaggle) (2.8.2)
+Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from kaggle) (2.31.0)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.10/dist-packages (from kaggle) (4.66.1)
+Requirement already satisfied: python-slugify in /usr/local/lib/python3.10/dist-packages (from kaggle) (8.0.1)
+Requirement already satisfied: urllib3 in /usr/local/lib/python3.10/dist-packages (from kaggle) (2.0.7)
+Requirement already satisfied: bleach in /usr/local/lib/python3.10/dist-packages (from kaggle) (6.1.0)
+Requirement already satisfied: webencodings in /usr/local/lib/python3.10/dist-packages (from bleach-&gt;kaggle) (0.5.1)
+Requirement already satisfied: text-unidecode&gt;=1.3 in /usr/local/lib/python3.10/dist-packages (from python-slugify-&gt;kaggle) (1.3)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;kaggle) (3.3.2)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.10/dist-packages (from requests-&gt;kaggle) (3.6)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mkdir: cannot create directory ‘/root/.kaggle’: File exists
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>cp: cannot stat &#39;kaggle.json&#39;: No such file or directory
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>chmod: cannot access &#39;/root/.kaggle/kaggle.json&#39;: No such file or directory
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;/usr/local/bin/kaggle&quot;, line 5, in &lt;module&gt;
+    from kaggle.cli import main
+  File &quot;/usr/local/lib/python3.10/dist-packages/kaggle/__init__.py&quot;, line 23, in &lt;module&gt;
+    api.authenticate()
+  File &quot;/usr/local/lib/python3.10/dist-packages/kaggle/api/kaggle_api_extended.py&quot;, line 403, in authenticate
+    raise IOError(&#39;Could not find {}. Make sure it\&#39;s located in&#39;
+OSError: Could not find kaggle.json. Make sure it&#39;s located in /root/.kaggle. Or use the environment method.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">local_zip</span> <span class="o">=</span> <span class="s1">&#39;/content/toronto-emotional-speech-set-tess.zip&#39;</span>
+<span class="n">zip_ref</span>   <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="n">local_zip</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">zip_ref</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="s1">&#39;/content/data&#39;</span><span class="p">)</span>
+<span class="n">zip_ref</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">dataset_path</span> <span class="o">=</span> <span class="s2">&quot;/content/data/TESS Toronto emotional speech set data&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-3-3261b375f2a2&gt;</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">local_zip</span> <span class="o">=</span> <span class="s1">&#39;/content/toronto-emotional-speech-set-tess.zip&#39;</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">zip_ref</span>   <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="n">local_zip</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">zip_ref</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="s1">&#39;/content/data&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">zip_ref</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">dataset_path</span> <span class="o">=</span> <span class="s2">&quot;/content/data/TESS Toronto emotional speech set data&quot;</span>
+
+<span class="nn">/usr/lib/python3.10/zipfile.py</span> in <span class="ni">__init__</span><span class="nt">(self, file, mode, compression, allowZip64, compresslevel, strict_timestamps)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1249</span>             <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1250</span>                 <span class="k">try</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1251</span>                     <span class="bp">self</span><span class="o">.</span><span class="n">fp</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">filemode</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1252</span>                 <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1253</span>                     <span class="k">if</span> <span class="n">filemode</span> <span class="ow">in</span> <span class="n">modeDict</span><span class="p">:</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;/content/toronto-emotional-speech-set-tess.zip&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">std_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">maxv_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">minv_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">median_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">skew_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">kurt_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">modus_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">q1_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">q3_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">iqr_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">zcr_mean_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">zcr_median_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">zcr_std_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">zcr_kurt_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">zcr_skew_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">rmse_mean_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">rmse_median_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">rmse_std_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">rmse_kurt_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">rmse_skew_list</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># data_audio = []</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[]</span>
+
+
+<span class="k">for</span> <span class="n">folder</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">):</span>
+  <span class="n">label_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">,</span> <span class="n">folder</span><span class="p">)</span>
+  <span class="n">audio_files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">label_path</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">label_path</span><span class="p">)</span>
+
+  <span class="k">for</span> <span class="n">audio_file</span> <span class="ow">in</span> <span class="n">audio_files</span><span class="p">:</span>
+    <span class="n">audio_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">label_path</span><span class="p">,</span> <span class="n">audio_file</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">sr</span> <span class="o">=</span> <span class="n">librosa</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">audio_file_path</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">freqs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fftfreq</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+
+    <span class="n">mean_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">freqs</span><span class="p">))</span>
+    <span class="n">std_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">freqs</span><span class="p">))</span>
+    <span class="n">maxv_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">amax</span><span class="p">(</span><span class="n">freqs</span><span class="p">))</span>
+    <span class="n">minv_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">amin</span><span class="p">(</span><span class="n">freqs</span><span class="p">))</span>
+    <span class="n">median_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">freqs</span><span class="p">))</span>
+    <span class="n">skew_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">skew</span><span class="p">(</span><span class="n">freqs</span><span class="p">))</span>
+    <span class="n">kurt_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">kurtosis</span><span class="p">(</span><span class="n">freqs</span><span class="p">))</span>
+    <span class="n">modus_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">freqs</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">q1_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="n">freqs</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">))</span>
+    <span class="n">q3_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="n">freqs</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">))</span>
+    <span class="n">iqr_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">iqr</span><span class="p">(</span><span class="n">freqs</span><span class="p">))</span>
+
+    <span class="n">zcr</span> <span class="o">=</span> <span class="n">librosa</span><span class="o">.</span><span class="n">feature</span><span class="o">.</span><span class="n">zero_crossing_rate</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">zcr_mean_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">zcr</span><span class="p">))</span>
+    <span class="n">zcr_median_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">zcr</span><span class="p">))</span>
+    <span class="n">zcr_std_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">zcr</span><span class="p">))</span>
+    <span class="n">zcr_kurt_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">kurtosis</span><span class="p">(</span><span class="n">zcr</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">zcr_skew_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">skew</span><span class="p">(</span><span class="n">zcr</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">rmse</span> <span class="o">=</span> <span class="n">librosa</span><span class="o">.</span><span class="n">feature</span><span class="o">.</span><span class="n">rms</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">rmse_mean_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">rmse</span><span class="p">))</span>
+    <span class="n">rmse_median_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">rmse</span><span class="p">))</span>
+    <span class="n">rmse_std_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">rmse</span><span class="p">))</span>
+    <span class="n">rmse_kurt_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">kurtosis</span><span class="p">(</span><span class="n">rmse</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">rmse_skew_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">skew</span><span class="p">(</span><span class="n">rmse</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="c1"># data_audio.append(x)</span>
+    <span class="k">if</span> <span class="n">label_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;surprised&#39;</span><span class="p">:</span>
+      <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;surprise&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">label_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/data/TESS Toronto emotional speech set data/OAF_Sad
+/content/data/TESS Toronto emotional speech set data/YAF_fear
+/content/data/TESS Toronto emotional speech set data/OAF_Fear
+/content/data/TESS Toronto emotional speech set data/YAF_happy
+/content/data/TESS Toronto emotional speech set data/OAF_angry
+/content/data/TESS Toronto emotional speech set data/YAF_neutral
+/content/data/TESS Toronto emotional speech set data/YAF_disgust
+/content/data/TESS Toronto emotional speech set data/OAF_Pleasant_surprise
+/content/data/TESS Toronto emotional speech set data/YAF_angry
+/content/data/TESS Toronto emotional speech set data/OAF_neutral
+/content/data/TESS Toronto emotional speech set data/YAF_sad
+/content/data/TESS Toronto emotional speech set data/OAF_disgust
+/content/data/TESS Toronto emotional speech set data/YAF_pleasant_surprised
+/content/data/TESS Toronto emotional speech set data/OAF_happy
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;mean&#39;</span> <span class="p">:</span> <span class="n">mean_list</span><span class="p">,</span>
+    <span class="s1">&#39;std&#39;</span> <span class="p">:</span> <span class="n">std_list</span><span class="p">,</span>
+    <span class="s1">&#39;max&#39;</span> <span class="p">:</span> <span class="n">maxv_list</span><span class="p">,</span>
+    <span class="s1">&#39;min&#39;</span> <span class="p">:</span> <span class="n">minv_list</span><span class="p">,</span>
+    <span class="s1">&#39;median&#39;</span> <span class="p">:</span> <span class="n">median_list</span><span class="p">,</span>
+    <span class="s1">&#39;modus&#39;</span> <span class="p">:</span> <span class="n">modus_list</span><span class="p">,</span>
+    <span class="s1">&#39;skew&#39;</span> <span class="p">:</span> <span class="n">skew_list</span><span class="p">,</span>
+    <span class="s1">&#39;kurt&#39;</span> <span class="p">:</span> <span class="n">kurt_list</span><span class="p">,</span>
+    <span class="s1">&#39;q1&#39;</span> <span class="p">:</span> <span class="n">q1_list</span><span class="p">,</span>
+    <span class="s1">&#39;q3&#39;</span> <span class="p">:</span> <span class="n">q3_list</span><span class="p">,</span>
+    <span class="s1">&#39;iqr&#39;</span> <span class="p">:</span> <span class="n">iqr_list</span><span class="p">,</span>
+    <span class="s1">&#39;zcr_mean&#39;</span> <span class="p">:</span> <span class="n">zcr_mean_list</span><span class="p">,</span>
+    <span class="s1">&#39;zcr_median&#39;</span> <span class="p">:</span> <span class="n">zcr_median_list</span><span class="p">,</span>
+    <span class="s1">&#39;zcr_std&#39;</span> <span class="p">:</span> <span class="n">zcr_std_list</span><span class="p">,</span>
+    <span class="s1">&#39;zcr_kurt&#39;</span> <span class="p">:</span> <span class="n">zcr_kurt_list</span><span class="p">,</span>
+    <span class="s1">&#39;zcr_skew&#39;</span> <span class="p">:</span> <span class="n">zcr_skew_list</span><span class="p">,</span>
+    <span class="s1">&#39;rmse_mean&#39;</span> <span class="p">:</span> <span class="n">rmse_mean_list</span><span class="p">,</span>
+    <span class="s1">&#39;rmse_median&#39;</span> <span class="p">:</span> <span class="n">rmse_median_list</span><span class="p">,</span>
+    <span class="s1">&#39;rmse_std&#39;</span> <span class="p">:</span> <span class="n">rmse_std_list</span><span class="p">,</span>
+    <span class="s1">&#39;rmse_kurt&#39;</span> <span class="p">:</span> <span class="n">rmse_kurt_list</span><span class="p">,</span>
+    <span class="s1">&#39;rmse_skew&#39;</span> <span class="p">:</span> <span class="n">rmse_skew_list</span><span class="p">,</span>
+    <span class="s1">&#39;label&#39;</span> <span class="p">:</span> <span class="n">labels</span>
+<span class="p">})</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-32ba4f3f-a2f5-4572-bfbf-8b7cb98d2752" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mean</th>
+      <th>std</th>
+      <th>max</th>
+      <th>min</th>
+      <th>median</th>
+      <th>modus</th>
+      <th>skew</th>
+      <th>kurt</th>
+      <th>q1</th>
+      <th>q3</th>
+      <th>...</th>
+      <th>zcr_median</th>
+      <th>zcr_std</th>
+      <th>zcr_kurt</th>
+      <th>zcr_skew</th>
+      <th>rmse_mean</th>
+      <th>rmse_median</th>
+      <th>rmse_std</th>
+      <th>rmse_kurt</th>
+      <th>rmse_skew</th>
+      <th>label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-6.508824e-18</td>
+      <td>0.288675</td>
+      <td>0.499992</td>
+      <td>-0.499992</td>
+      <td>0.000000</td>
+      <td>-0.499992</td>
+      <td>-9.047830e-17</td>
+      <td>-1.2</td>
+      <td>-0.249996</td>
+      <td>0.249996</td>
+      <td>...</td>
+      <td>0.032715</td>
+      <td>0.122139</td>
+      <td>4.179769</td>
+      <td>2.373553</td>
+      <td>0.012980</td>
+      <td>0.010932</td>
+      <td>0.010152</td>
+      <td>1.325821</td>
+      <td>1.179599</td>
+      <td>sad</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2.354935e-18</td>
+      <td>0.288675</td>
+      <td>0.499992</td>
+      <td>-0.499992</td>
+      <td>0.000000</td>
+      <td>-0.499992</td>
+      <td>1.003784e-17</td>
+      <td>-1.2</td>
+      <td>-0.249996</td>
+      <td>0.249996</td>
+      <td>...</td>
+      <td>0.031250</td>
+      <td>0.119017</td>
+      <td>6.442909</td>
+      <td>2.814218</td>
+      <td>0.015991</td>
+      <td>0.014548</td>
+      <td>0.009993</td>
+      <td>-1.258002</td>
+      <td>0.170551</td>
+      <td>sad</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-8.486371e-06</td>
+      <td>0.288675</td>
+      <td>0.499983</td>
+      <td>-0.500000</td>
+      <td>-0.000008</td>
+      <td>-0.500000</td>
+      <td>1.190082e-17</td>
+      <td>-1.2</td>
+      <td>-0.250004</td>
+      <td>0.249987</td>
+      <td>...</td>
+      <td>0.031494</td>
+      <td>0.139290</td>
+      <td>0.847750</td>
+      <td>1.573352</td>
+      <td>0.008692</td>
+      <td>0.008390</td>
+      <td>0.005597</td>
+      <td>-0.926075</td>
+      <td>0.355421</td>
+      <td>sad</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-8.541168e-06</td>
+      <td>0.288675</td>
+      <td>0.499983</td>
+      <td>-0.500000</td>
+      <td>-0.000009</td>
+      <td>-0.500000</td>
+      <td>1.646807e-16</td>
+      <td>-1.2</td>
+      <td>-0.250004</td>
+      <td>0.249987</td>
+      <td>...</td>
+      <td>0.032715</td>
+      <td>0.144918</td>
+      <td>3.841727</td>
+      <td>2.348452</td>
+      <td>0.009807</td>
+      <td>0.010024</td>
+      <td>0.005599</td>
+      <td>-0.865814</td>
+      <td>0.200716</td>
+      <td>sad</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>-7.911643e-06</td>
+      <td>0.288675</td>
+      <td>0.499984</td>
+      <td>-0.500000</td>
+      <td>-0.000008</td>
+      <td>-0.500000</td>
+      <td>2.033050e-16</td>
+      <td>-1.2</td>
+      <td>-0.250004</td>
+      <td>0.249988</td>
+      <td>...</td>
+      <td>0.034668</td>
+      <td>0.141549</td>
+      <td>2.272299</td>
+      <td>1.945739</td>
+      <td>0.012247</td>
+      <td>0.010309</td>
+      <td>0.009952</td>
+      <td>0.637881</td>
+      <td>1.001394</td>
+      <td>sad</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2795</th>
+      <td>-6.995872e-19</td>
+      <td>0.288675</td>
+      <td>0.499990</td>
+      <td>-0.499990</td>
+      <td>0.000000</td>
+      <td>-0.499990</td>
+      <td>4.969948e-20</td>
+      <td>-1.2</td>
+      <td>-0.249995</td>
+      <td>0.249995</td>
+      <td>...</td>
+      <td>0.036377</td>
+      <td>0.173560</td>
+      <td>2.114576</td>
+      <td>1.913573</td>
+      <td>0.015238</td>
+      <td>0.015401</td>
+      <td>0.008959</td>
+      <td>-0.722647</td>
+      <td>0.187425</td>
+      <td>happy</td>
+    </tr>
+    <tr>
+      <th>2796</th>
+      <td>-1.683268e-17</td>
+      <td>0.288675</td>
+      <td>0.499990</td>
+      <td>-0.499990</td>
+      <td>0.000000</td>
+      <td>-0.499990</td>
+      <td>1.767819e-17</td>
+      <td>-1.2</td>
+      <td>-0.249995</td>
+      <td>0.249995</td>
+      <td>...</td>
+      <td>0.034668</td>
+      <td>0.147966</td>
+      <td>3.761791</td>
+      <td>2.327642</td>
+      <td>0.019405</td>
+      <td>0.016726</td>
+      <td>0.010923</td>
+      <td>-0.572701</td>
+      <td>0.452341</td>
+      <td>happy</td>
+    </tr>
+    <tr>
+      <th>2797</th>
+      <td>-1.102682e-05</td>
+      <td>0.288675</td>
+      <td>0.499978</td>
+      <td>-0.500000</td>
+      <td>-0.000011</td>
+      <td>-0.500000</td>
+      <td>5.639628e-16</td>
+      <td>-1.2</td>
+      <td>-0.250006</td>
+      <td>0.249983</td>
+      <td>...</td>
+      <td>0.035156</td>
+      <td>0.149963</td>
+      <td>4.303073</td>
+      <td>2.416481</td>
+      <td>0.021097</td>
+      <td>0.018704</td>
+      <td>0.014092</td>
+      <td>1.707882</td>
+      <td>1.278282</td>
+      <td>happy</td>
+    </tr>
+    <tr>
+      <th>2798</th>
+      <td>-9.955400e-06</td>
+      <td>0.288675</td>
+      <td>0.499980</td>
+      <td>-0.500000</td>
+      <td>-0.000010</td>
+      <td>-0.500000</td>
+      <td>-7.656348e-18</td>
+      <td>-1.2</td>
+      <td>-0.250005</td>
+      <td>0.249985</td>
+      <td>...</td>
+      <td>0.042969</td>
+      <td>0.191092</td>
+      <td>1.078245</td>
+      <td>1.584040</td>
+      <td>0.017884</td>
+      <td>0.017433</td>
+      <td>0.013562</td>
+      <td>0.376348</td>
+      <td>0.863689</td>
+      <td>happy</td>
+    </tr>
+    <tr>
+      <th>2799</th>
+      <td>-1.005268e-05</td>
+      <td>0.288675</td>
+      <td>0.499980</td>
+      <td>-0.500000</td>
+      <td>-0.000010</td>
+      <td>-0.500000</td>
+      <td>1.642223e-16</td>
+      <td>-1.2</td>
+      <td>-0.250005</td>
+      <td>0.249985</td>
+      <td>...</td>
+      <td>0.040039</td>
+      <td>0.143345</td>
+      <td>3.748787</td>
+      <td>2.306747</td>
+      <td>0.019338</td>
+      <td>0.015173</td>
+      <td>0.019417</td>
+      <td>6.696365</td>
+      <td>2.368380</td>
+      <td>happy</td>
+    </tr>
+  </tbody>
+</table>
+<p>2800 rows × 22 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-32ba4f3f-a2f5-4572-bfbf-8b7cb98d2752')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-32ba4f3f-a2f5-4572-bfbf-8b7cb98d2752 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-32ba4f3f-a2f5-4572-bfbf-8b7cb98d2752');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-018264b6-2626-462a-af68-6089026105b2">
+  <button class="colab-df-quickchart" onclick="quickchart('df-018264b6-2626-462a-af68-6089026105b2')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-018264b6-2626-462a-af68-6089026105b2 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_feature</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">df_feature</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-d26b8221-8504-4f65-bec0-2f0199f3560e" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mean</th>
+      <th>std</th>
+      <th>max</th>
+      <th>min</th>
+      <th>median</th>
+      <th>modus</th>
+      <th>skew</th>
+      <th>kurt</th>
+      <th>q1</th>
+      <th>q3</th>
+      <th>...</th>
+      <th>zcr_mean</th>
+      <th>zcr_median</th>
+      <th>zcr_std</th>
+      <th>zcr_kurt</th>
+      <th>zcr_skew</th>
+      <th>rmse_mean</th>
+      <th>rmse_median</th>
+      <th>rmse_std</th>
+      <th>rmse_kurt</th>
+      <th>rmse_skew</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-6.508824e-18</td>
+      <td>0.288675</td>
+      <td>0.499992</td>
+      <td>-0.499992</td>
+      <td>0.000000</td>
+      <td>-0.499992</td>
+      <td>-9.047830e-17</td>
+      <td>-1.2</td>
+      <td>-0.249996</td>
+      <td>0.249996</td>
+      <td>...</td>
+      <td>0.079806</td>
+      <td>0.032715</td>
+      <td>0.122139</td>
+      <td>4.179769</td>
+      <td>2.373553</td>
+      <td>0.012980</td>
+      <td>0.010932</td>
+      <td>0.010152</td>
+      <td>1.325821</td>
+      <td>1.179599</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2.354935e-18</td>
+      <td>0.288675</td>
+      <td>0.499992</td>
+      <td>-0.499992</td>
+      <td>0.000000</td>
+      <td>-0.499992</td>
+      <td>1.003784e-17</td>
+      <td>-1.2</td>
+      <td>-0.249996</td>
+      <td>0.249996</td>
+      <td>...</td>
+      <td>0.069452</td>
+      <td>0.031250</td>
+      <td>0.119017</td>
+      <td>6.442909</td>
+      <td>2.814218</td>
+      <td>0.015991</td>
+      <td>0.014548</td>
+      <td>0.009993</td>
+      <td>-1.258002</td>
+      <td>0.170551</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-8.486371e-06</td>
+      <td>0.288675</td>
+      <td>0.499983</td>
+      <td>-0.500000</td>
+      <td>-0.000008</td>
+      <td>-0.500000</td>
+      <td>1.190082e-17</td>
+      <td>-1.2</td>
+      <td>-0.250004</td>
+      <td>0.249987</td>
+      <td>...</td>
+      <td>0.103086</td>
+      <td>0.031494</td>
+      <td>0.139290</td>
+      <td>0.847750</td>
+      <td>1.573352</td>
+      <td>0.008692</td>
+      <td>0.008390</td>
+      <td>0.005597</td>
+      <td>-0.926075</td>
+      <td>0.355421</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-8.541168e-06</td>
+      <td>0.288675</td>
+      <td>0.499983</td>
+      <td>-0.500000</td>
+      <td>-0.000009</td>
+      <td>-0.500000</td>
+      <td>1.646807e-16</td>
+      <td>-1.2</td>
+      <td>-0.250004</td>
+      <td>0.249987</td>
+      <td>...</td>
+      <td>0.085194</td>
+      <td>0.032715</td>
+      <td>0.144918</td>
+      <td>3.841727</td>
+      <td>2.348452</td>
+      <td>0.009807</td>
+      <td>0.010024</td>
+      <td>0.005599</td>
+      <td>-0.865814</td>
+      <td>0.200716</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>-7.911643e-06</td>
+      <td>0.288675</td>
+      <td>0.499984</td>
+      <td>-0.500000</td>
+      <td>-0.000008</td>
+      <td>-0.500000</td>
+      <td>2.033050e-16</td>
+      <td>-1.2</td>
+      <td>-0.250004</td>
+      <td>0.249988</td>
+      <td>...</td>
+      <td>0.094746</td>
+      <td>0.034668</td>
+      <td>0.141549</td>
+      <td>2.272299</td>
+      <td>1.945739</td>
+      <td>0.012247</td>
+      <td>0.010309</td>
+      <td>0.009952</td>
+      <td>0.637881</td>
+      <td>1.001394</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2795</th>
+      <td>-6.995872e-19</td>
+      <td>0.288675</td>
+      <td>0.499990</td>
+      <td>-0.499990</td>
+      <td>0.000000</td>
+      <td>-0.499990</td>
+      <td>4.969948e-20</td>
+      <td>-1.2</td>
+      <td>-0.249995</td>
+      <td>0.249995</td>
+      <td>...</td>
+      <td>0.114390</td>
+      <td>0.036377</td>
+      <td>0.173560</td>
+      <td>2.114576</td>
+      <td>1.913573</td>
+      <td>0.015238</td>
+      <td>0.015401</td>
+      <td>0.008959</td>
+      <td>-0.722647</td>
+      <td>0.187425</td>
+    </tr>
+    <tr>
+      <th>2796</th>
+      <td>-1.683268e-17</td>
+      <td>0.288675</td>
+      <td>0.499990</td>
+      <td>-0.499990</td>
+      <td>0.000000</td>
+      <td>-0.499990</td>
+      <td>1.767819e-17</td>
+      <td>-1.2</td>
+      <td>-0.249995</td>
+      <td>0.249995</td>
+      <td>...</td>
+      <td>0.089995</td>
+      <td>0.034668</td>
+      <td>0.147966</td>
+      <td>3.761791</td>
+      <td>2.327642</td>
+      <td>0.019405</td>
+      <td>0.016726</td>
+      <td>0.010923</td>
+      <td>-0.572701</td>
+      <td>0.452341</td>
+    </tr>
+    <tr>
+      <th>2797</th>
+      <td>-1.102682e-05</td>
+      <td>0.288675</td>
+      <td>0.499978</td>
+      <td>-0.500000</td>
+      <td>-0.000011</td>
+      <td>-0.500000</td>
+      <td>5.639628e-16</td>
+      <td>-1.2</td>
+      <td>-0.250006</td>
+      <td>0.249983</td>
+      <td>...</td>
+      <td>0.092005</td>
+      <td>0.035156</td>
+      <td>0.149963</td>
+      <td>4.303073</td>
+      <td>2.416481</td>
+      <td>0.021097</td>
+      <td>0.018704</td>
+      <td>0.014092</td>
+      <td>1.707882</td>
+      <td>1.278282</td>
+    </tr>
+    <tr>
+      <th>2798</th>
+      <td>-9.955400e-06</td>
+      <td>0.288675</td>
+      <td>0.499980</td>
+      <td>-0.500000</td>
+      <td>-0.000010</td>
+      <td>-0.500000</td>
+      <td>-7.656348e-18</td>
+      <td>-1.2</td>
+      <td>-0.250005</td>
+      <td>0.249985</td>
+      <td>...</td>
+      <td>0.141064</td>
+      <td>0.042969</td>
+      <td>0.191092</td>
+      <td>1.078245</td>
+      <td>1.584040</td>
+      <td>0.017884</td>
+      <td>0.017433</td>
+      <td>0.013562</td>
+      <td>0.376348</td>
+      <td>0.863689</td>
+    </tr>
+    <tr>
+      <th>2799</th>
+      <td>-1.005268e-05</td>
+      <td>0.288675</td>
+      <td>0.499980</td>
+      <td>-0.500000</td>
+      <td>-0.000010</td>
+      <td>-0.500000</td>
+      <td>1.642223e-16</td>
+      <td>-1.2</td>
+      <td>-0.250005</td>
+      <td>0.249985</td>
+      <td>...</td>
+      <td>0.091483</td>
+      <td>0.040039</td>
+      <td>0.143345</td>
+      <td>3.748787</td>
+      <td>2.306747</td>
+      <td>0.019338</td>
+      <td>0.015173</td>
+      <td>0.019417</td>
+      <td>6.696365</td>
+      <td>2.368380</td>
+    </tr>
+  </tbody>
+</table>
+<p>2800 rows × 21 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d26b8221-8504-4f65-bec0-2f0199f3560e')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-d26b8221-8504-4f65-bec0-2f0199f3560e button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-d26b8221-8504-4f65-bec0-2f0199f3560e');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-0634fe8e-55c6-459a-a6f4-ce09ca6c039f">
+  <button class="colab-df-quickchart" onclick="quickchart('df-0634fe8e-55c6-459a-a6f4-ce09ca6c039f')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-0634fe8e-55c6-459a-a6f4-ce09ca6c039f button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_label</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">df_label</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0         sad
+1         sad
+2         sad
+3         sad
+4         sad
+        ...  
+2795    happy
+2796    happy
+2797    happy
+2798    happy
+2799    happy
+Name: label, Length: 2800, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import pickle</span>
+<span class="kn">import</span> <span class="nn">joblib</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df_feature</span><span class="p">,</span> <span class="n">df_label</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="n">scalar</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">scaler_z</span> <span class="o">=</span> <span class="n">scalar</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">)</span>
+
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">scaler_z</span><span class="p">,</span> <span class="s1">&#39;z-score_scaler.pkl&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;z-score_scaler.pkl&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_train_normalized_zero</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">scaler_z</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">x_train</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="n">x_train</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">x_test_normalized_zero</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">scaler_z</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">x_test</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="n">x_test</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+
+<span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">knn_zero</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train_normalized_zero</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">knn_zero</span><span class="p">,</span> <span class="s2">&quot;knn_z-score.pkl&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;knn_z-score.pkl&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+
+<span class="n">y_pred_zero_knn</span> <span class="o">=</span> <span class="n">knn_zero</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test_normalized_zero</span><span class="p">)</span>
+
+<span class="c1"># Menghitung akurasi</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_zero_knn</span><span class="p">)</span>
+<span class="n">accuracy</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8125
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+<span class="n">scalar_</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
+<span class="n">scaler_mmax</span> <span class="o">=</span> <span class="n">scalar</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">scaler_mmax</span><span class="p">,</span> <span class="s1">&#39;mmax_scaler.pkl&#39;</span><span class="p">)</span>
+
+<span class="n">x_train_normalized_mmax</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">scaler_mmax</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">x_train</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="n">x_train</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">x_test_normalized_mmax</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">scaler_mmax</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">x_test</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="n">x_test</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">knn_mmax</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train_normalized_mmax</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_pred_mmax_knn</span> <span class="o">=</span> <span class="n">knn_mmax</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test_normalized_mmax</span><span class="p">)</span>
+
+<span class="c1"># Menghitung akurasi</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_mmax_knn</span><span class="p">)</span>
+<span class="n">accuracy</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8125
+</pre></div>
+</div>
+</div>
+</div>
+<section id="grid-mencari-k">
+<h1>Grid Mencari K<a class="headerlink" href="#grid-mencari-k" title="Permalink to this heading">#</a></h1>
+<section id="z-score">
+<h2>Z-Score<a class="headerlink" href="#z-score" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+
+<span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
+    <span class="p">(</span><span class="s1">&#39;knn&#39;</span><span class="p">,</span> <span class="n">KNeighborsClassifier</span><span class="p">())</span>
+<span class="p">])</span>
+
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;knn__n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">21</span><span class="p">)],</span>  <span class="c1"># Jumlah tetangga terdekat (K)</span>
+<span class="p">}</span>
+
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Jalankan grid search pada data pelatihan</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train_normalized_zero</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Cetak parameter terbaik yang ditemukan</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Z-Score&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Parameter terbaik:&quot;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi model terbaik pada data pengujian</span>
+<span class="n">best_model</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test_normalized_zero</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">knn_zero</span><span class="p">,</span> <span class="s2">&quot;knn_z-score_grid.pkl&quot;</span><span class="p">)</span>
+
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Akurasi pada data pengujian:&quot;</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Z-Score
+Parameter terbaik: {&#39;knn__n_neighbors&#39;: 5}
+Akurasi pada data pengujian: 0.8089285714285714
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="minmax">
+<h2>MinMax<a class="headerlink" href="#minmax" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+
+<span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
+    <span class="p">(</span><span class="s1">&#39;knn&#39;</span><span class="p">,</span> <span class="n">KNeighborsClassifier</span><span class="p">())</span>
+<span class="p">])</span>
+
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;knn__n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">21</span><span class="p">)],</span>  <span class="c1"># Jumlah tetangga terdekat (K)</span>
+<span class="p">}</span>
+
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Jalankan grid search pada data pelatihan</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train_normalized_mmax</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Cetak parameter terbaik yang ditemukan</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MinMax&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Parameter terbaik:&quot;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi model terbaik pada data pengujian</span>
+<span class="n">best_model</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test_normalized_mmax</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">knn_zero</span><span class="p">,</span> <span class="s2">&quot;knn_mmax_grid.pkl&quot;</span><span class="p">)</span>
+
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Akurasi pada data pengujian:&quot;</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MinMax
+Parameter terbaik: {&#39;knn__n_neighbors&#39;: 5}
+Akurasi pada data pengujian: 0.8089285714285714
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="pca">
+<h1>PCA<a class="headerlink" href="#pca" title="Permalink to this heading">#</a></h1>
+<section id="id1">
+<h2>Z-Score<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+
+<span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
+    <span class="p">(</span><span class="s1">&#39;pca&#39;</span><span class="p">,</span> <span class="n">PCA</span><span class="p">()),</span>  <span class="c1"># Anda dapat mengatur jumlah komponen PCA di sini</span>
+    <span class="p">(</span><span class="s1">&#39;knn&#39;</span><span class="p">,</span> <span class="n">KNeighborsClassifier</span><span class="p">())</span>
+<span class="p">])</span>
+
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;pca__n_components&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)],</span>  <span class="c1"># Jumlah komponen PCA</span>
+    <span class="s1">&#39;knn__n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)],</span>  <span class="c1"># Jumlah tetangga terdekat (K)</span>
+<span class="p">}</span>
+
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Jalankan grid search pada data pelatihan</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train_normalized_zero</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Cetak parameter terbaik yang ditemukan</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Zero&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Parameter terbaik:&quot;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi model terbaik pada data pengujian</span>
+<span class="n">best_model</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test_normalized_zero</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">best_model</span><span class="p">,</span> <span class="s2">&quot;knn_zero_grid_PCA.pkl&quot;</span><span class="p">)</span>
+
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Akurasi pada data pengujian:&quot;</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Zero
+Parameter terbaik: {&#39;knn__n_neighbors&#39;: 5, &#39;pca__n_components&#39;: 20}
+Akurasi pada data pengujian: 0.8089285714285714
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">zero_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">x_train_normalized_zero</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">pca</span><span class="p">,</span> <span class="s2">&quot;PCA_zero.pkl&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;PCA_zero.pkl&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id2">
+<h2>MinMax<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+
+<span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
+    <span class="p">(</span><span class="s1">&#39;pca&#39;</span><span class="p">,</span> <span class="n">PCA</span><span class="p">()),</span>  <span class="c1"># Anda dapat mengatur jumlah komponen PCA di sini</span>
+    <span class="p">(</span><span class="s1">&#39;knn&#39;</span><span class="p">,</span> <span class="n">KNeighborsClassifier</span><span class="p">())</span>
+<span class="p">])</span>
+
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;pca__n_components&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)],</span>  <span class="c1"># Jumlah komponen PCA</span>
+    <span class="s1">&#39;knn__n_neighbors&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">)],</span>  <span class="c1"># Jumlah tetangga terdekat (K)</span>
+<span class="p">}</span>
+
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># Jalankan grid search pada data pelatihan</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train_normalized_mmax</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Cetak parameter terbaik yang ditemukan</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MinMax&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Parameter terbaik:&quot;</span><span class="p">,</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi model terbaik pada data pengujian</span>
+<span class="n">best_model</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test_normalized_mmax</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">best_model</span><span class="p">,</span> <span class="s2">&quot;knn_mmax_grid_PCA.pkl&quot;</span><span class="p">)</span>
+
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Akurasi pada data pengujian:&quot;</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>MinMax
+Parameter terbaik: {&#39;knn__n_neighbors&#39;: 5, &#39;pca__n_components&#39;: 20}
+Akurasi pada data pengujian: 0.8089285714285714
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">zero_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">x_train_normalized_mmax</span><span class="p">)</span>
+<span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">pca</span><span class="p">,</span> <span class="s2">&quot;PCA_mmax.pkl&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;PCA_mmax.pkl&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># from sklearn.decomposition import PCA</span>
+<span class="c1"># from sklearn.metrics import accuracy_score</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+  <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
+  <span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train_normalized_zero</span><span class="p">)</span>
+  <span class="n">pca_train</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">x_train_normalized_zero</span><span class="p">)</span>
+  <span class="n">pca_test</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">x_test_normalized_zero</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;dimensi = </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="n">Knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">Knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pca_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">Knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">pca_test</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;k = </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="w"> </span><span class="n">y_pred</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dimensi = 20
+k = 1 = 0.7928571428571428
+k = 3 = 0.8125
+k = 5 = 0.8089285714285714
+k = 7 = 0.8196428571428571
+dimensi = 19
+k = 1 = 0.7928571428571428
+k = 3 = 0.8125
+k = 5 = 0.8089285714285714
+k = 7 = 0.8196428571428571
+dimensi = 18
+k = 1 = 0.7928571428571428
+k = 3 = 0.8125
+k = 5 = 0.8089285714285714
+k = 7 = 0.8196428571428571
+dimensi = 17
+k = 1 = 0.7928571428571428
+k = 3 = 0.8125
+k = 5 = 0.8089285714285714
+k = 7 = 0.8196428571428571
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Heart_Disease.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Tujuan</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Grid Mencari K</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#z-score">Z-Score</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minmax">MinMax</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pca">PCA</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Z-Score</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">MinMax</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By A. Teguh Budi Setya Prasetya
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

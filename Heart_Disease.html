@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Tujuan &#8212; Heart Disease</title>
+    <title>UAS PSD &#8212; Heart Disease</title>
   
   
   
@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Heart_Disease';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Grid Mencari K" href="UTS_PSD.html" />
+    <link rel="next" title="UTS PSD" href="UTS_PSD.html" />
     <link rel="prev" title="Selamat Datang" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -171,13 +171,13 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tujuan</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>UAS PSD</strong></a></li>
 
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="UTS_PSD.html">Grid Mencari K</a></li>
 
+<li class="toctree-l1"><a class="reference internal" href="UTS_PSD.html"><strong>UTS PSD</strong></a></li>
 </ul>
 
     </div>
@@ -363,7 +363,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Tujuan</h1>
+    <h1>UAS PSD</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -373,7 +373,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tujuan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>UAS PSD</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">Tujuan</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">Data Understanding</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-missing-values">Identifikasi missing values</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-keseimbangan-kelas">Identifikasi keseimbangan kelas</a></li>
@@ -426,7 +427,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="tujuan">
+  <section class="tex2jax_ignore mathjax_ignore" id="uas-psd">
+<h1><strong>UAS PSD</strong><a class="headerlink" href="#uas-psd" title="Permalink to this heading">#</a></h1>
+<p>Repository : <a class="github reference external" href="https://github.com/teguhbudiprasetya/heart-disease-streamlit/tree/master">teguhbudiprasetya/heart-disease-streamlit</a></p>
+<p>Streamlit  : <a class="reference external" href="https://teguhprasetya-heart-disease-app-deploy.streamlit.app/">https://teguhprasetya-heart-disease-app-deploy.streamlit.app/</a></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tujuan">
 <h1>Tujuan<a class="headerlink" href="#tujuan" title="Permalink to this heading">#</a></h1>
 <p>Dataset yang mendeskripsikan diagnosa penyakit jantung. Dalam konteks ini, dataset yang terdiri dari 13 fitur, kombinasi fitur nominal dan numerik, serta memiliki kelas-kelas yang mengindikasikan kemungkinan seseorang menderita penyakit jantung.</p>
 <p>Penyakit jantung merupakan salah satu penyakit yang paling umum dan sering kali fatal di seluruh dunia. Dengan memiliki dataset yang memuat informasi mengenai diagnosa penyakit jantung, kita dapat melakukan analisis lebih lanjut untuk prediksi awal dan pencegahan:</p>
@@ -626,7 +632,7 @@ document.write(`
     <span class="k">if</span> <span class="n">accuracy</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">accuracy</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">bar</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">+</span> <span class="n">bar</span><span class="o">.</span><span class="n">get_width</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="n">height</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
                 <span class="n">textcoords</span><span class="o">=</span><span class="s2">&quot;offset points&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-        
+
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -683,7 +689,7 @@ document.write(`
 <p>Mengisi missing values dengan nilai yang paling sering muncul pada fitur atau kolomnya.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
- X_{\text{i}} = \begin{cases} \text{modus}(X) &amp; \text{jika nilai} \ X_{\text{i}} \ \text{adalah missing value} \\ X_{\text{i}} &amp; \text{jika nilai} \ X_{\text{i}} \ \text{sudah ada} \end{cases} 
+ X_{\text{i}} = \begin{cases} \text{modus}(X) &amp; \text{jika nilai} \ X_{\text{i}} \ \text{adalah missing value} \\ X_{\text{i}} &amp; \text{jika nilai} \ X_{\text{i}} \ \text{sudah ada} \end{cases}
 \end{split}\]</div>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(X\)</span> adalah himpunan (fitur)</p></li>
@@ -708,7 +714,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-70b5f18b-63df-4a15-8b74-e10ff9d3710b" class="colab-df-container">
+  <div id="df-3bdd596f-f2e1-46ea-b9d7-00dff7cb41c7" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -926,7 +932,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-70b5f18b-63df-4a15-8b74-e10ff9d3710b')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-3bdd596f-f2e1-46ea-b9d7-00dff7cb41c7')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -978,12 +984,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-70b5f18b-63df-4a15-8b74-e10ff9d3710b button.colab-df-convert');
+        document.querySelector('#df-3bdd596f-f2e1-46ea-b9d7-00dff7cb41c7 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-70b5f18b-63df-4a15-8b74-e10ff9d3710b');
+        const element = document.querySelector('#df-3bdd596f-f2e1-46ea-b9d7-00dff7cb41c7');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1059,7 +1065,7 @@ x_{\text{norm}} = \frac{x - \text{min}(X)}{\text{max}(X) - \text{min}(X)}
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;scaler_mmax.pkl&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">scaler_mmax</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
 
-    
+
 <span class="n">scaled_data</span> <span class="o">=</span> <span class="n">scaler_mmax</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">imputed_df</span><span class="p">)</span>
 
 <span class="n">scaled_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">scaled_data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">imputed_df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
@@ -1071,7 +1077,7 @@ x_{\text{norm}} = \frac{x - \text{min}(X)}{\text{max}(X) - \text{min}(X)}
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a4445a75-101d-4d59-9f50-8376ded95d3f" class="colab-df-container">
+  <div id="df-c0ad25dd-aea4-4f05-9d07-7366464da72f" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1289,7 +1295,7 @@ x_{\text{norm}} = \frac{x - \text{min}(X)}{\text{max}(X) - \text{min}(X)}
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-a4445a75-101d-4d59-9f50-8376ded95d3f')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c0ad25dd-aea4-4f05-9d07-7366464da72f')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1341,12 +1347,12 @@ x_{\text{norm}} = \frac{x - \text{min}(X)}{\text{max}(X) - \text{min}(X)}
 
     <script>
       const buttonEl =
-        document.querySelector('#df-a4445a75-101d-4d59-9f50-8376ded95d3f button.colab-df-convert');
+        document.querySelector('#df-c0ad25dd-aea4-4f05-9d07-7366464da72f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a4445a75-101d-4d59-9f50-8376ded95d3f');
+        const element = document.querySelector('#df-c0ad25dd-aea4-4f05-9d07-7366464da72f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1912,7 +1918,7 @@ a^{[l]} = g^{[l]}(z^{[l]})
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/441293e892f7f42fea22f314036a54de51e24f30163295636dc865ebc60f6d08.png" src="_images/441293e892f7f42fea22f314036a54de51e24f30163295636dc865ebc60f6d08.png" />
+<img alt="_images/33e8c0218cc77d13bc18f93bd5e05b9ee501bbb62ffce87b8dacaf3aa084ac55.png" src="_images/33e8c0218cc77d13bc18f93bd5e05b9ee501bbb62ffce87b8dacaf3aa084ac55.png" />
 </div>
 </div>
 <section id="information-gain">
@@ -1938,7 +1944,7 @@ a^{[l]} = g^{[l]}(z^{[l]})
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-7d03618f-80c7-4a88-b1b1-c58794247ef4" class="colab-df-container">
+  <div id="df-e90e916a-181f-4e9b-93de-c5bf011ec569" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2120,7 +2126,7 @@ a^{[l]} = g^{[l]}(z^{[l]})
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-7d03618f-80c7-4a88-b1b1-c58794247ef4')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e90e916a-181f-4e9b-93de-c5bf011ec569')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -2172,12 +2178,12 @@ a^{[l]} = g^{[l]}(z^{[l]})
 
     <script>
       const buttonEl =
-        document.querySelector('#df-7d03618f-80c7-4a88-b1b1-c58794247ef4 button.colab-df-convert');
+        document.querySelector('#df-e90e916a-181f-4e9b-93de-c5bf011ec569 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-7d03618f-80c7-4a88-b1b1-c58794247ef4');
+        const element = document.querySelector('#df-e90e916a-181f-4e9b-93de-c5bf011ec569');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2294,7 +2300,7 @@ a^{[l]} = g^{[l]}(z^{[l]})
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8ebd376b-49ac-4738-9199-73ddedea7b18" class="colab-df-container">
+  <div id="df-b3c8b755-d08d-4b2e-8076-1363eda54068" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2476,7 +2482,7 @@ a^{[l]} = g^{[l]}(z^{[l]})
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8ebd376b-49ac-4738-9199-73ddedea7b18')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b3c8b755-d08d-4b2e-8076-1363eda54068')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -2528,12 +2534,12 @@ a^{[l]} = g^{[l]}(z^{[l]})
 
     <script>
       const buttonEl =
-        document.querySelector('#df-8ebd376b-49ac-4738-9199-73ddedea7b18 button.colab-df-convert');
+        document.querySelector('#df-b3c8b755-d08d-4b2e-8076-1363eda54068 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8ebd376b-49ac-4738-9199-73ddedea7b18');
+        const element = document.querySelector('#df-b3c8b755-d08d-4b2e-8076-1363eda54068');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2643,7 +2649,7 @@ a^{[l]} = g^{[l]}(z^{[l]})
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-6aaf0c6a-3f88-489c-aa5d-146fcf876906" class="colab-df-container">
+  <div id="df-528d6b26-3034-47d2-a306-09732dc0dbb0" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2825,7 +2831,7 @@ a^{[l]} = g^{[l]}(z^{[l]})
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-6aaf0c6a-3f88-489c-aa5d-146fcf876906')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-528d6b26-3034-47d2-a306-09732dc0dbb0')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -2877,12 +2883,12 @@ a^{[l]} = g^{[l]}(z^{[l]})
 
     <script>
       const buttonEl =
-        document.querySelector('#df-6aaf0c6a-3f88-489c-aa5d-146fcf876906 button.colab-df-convert');
+        document.querySelector('#df-528d6b26-3034-47d2-a306-09732dc0dbb0 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-6aaf0c6a-3f88-489c-aa5d-146fcf876906');
+        const element = document.querySelector('#df-528d6b26-3034-47d2-a306-09732dc0dbb0');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3113,7 +3119,7 @@ a^{[l]} = g^{[l]}(z^{[l]})
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Grid Mencari K</p>
+        <p class="prev-next-title"><strong>UTS PSD</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -3132,7 +3138,8 @@ a^{[l]} = g^{[l]}(z^{[l]})
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tujuan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>UAS PSD</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">Tujuan</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">Data Understanding</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-missing-values">Identifikasi missing values</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-keseimbangan-kelas">Identifikasi keseimbangan kelas</a></li>
